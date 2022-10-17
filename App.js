@@ -10,15 +10,18 @@ export default function App() {
         flexDirection: "row", //horizontal
         justifyContent: "center", //main
         alignItems: "center", //secondary
-        alignContent: "center",
-        flexWrap: "wrap",
+        //alignContent: "center",
+        //flexWrap: "wrap",
       }}
     >
       <View
         style={{
           backgroundColor: "dodgerblue",
-          width: 100,
-          height: 300,
+          width: 400,
+          height: 100,
+          flexShrink: -1, //or flex:-1,
+          //flexBasis: 100, //width or height
+          //flexGrow: 1, //or flex: 1,
           //alignSelf: "flex-start",
           // flex: 2,
         }}
@@ -34,22 +37,6 @@ export default function App() {
       <View
         style={{
           backgroundColor: "tomato",
-          width: 100,
-          height: 100,
-          // flex: 1,
-        }}
-      />
-      <View
-        style={{
-          backgroundColor: "grey",
-          width: 100,
-          height: 100,
-          // flex: 1,
-        }}
-      />
-      <View
-        style={{
-          backgroundColor: "greenyellow",
           width: 100,
           height: 100,
           // flex: 1,
