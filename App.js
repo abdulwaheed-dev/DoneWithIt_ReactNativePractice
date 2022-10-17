@@ -1,47 +1,6 @@
 import React from "react";
-import { View } from "react-native";
+import WelcomeScreen from "./app/screens/WelcomeScreen";
 
 export default function App() {
-  return (
-    <View
-      style={{
-        backgroundColor: "white",
-        flex: 1,
-        flexDirection: "row", //horizontal
-        justifyContent: "center", //main
-        alignItems: "center", //secondary
-        //alignContent: "center",
-        //flexWrap: "wrap",
-      }}
-    >
-      <View
-        style={{
-          backgroundColor: "dodgerblue",
-          width: 400,
-          height: 100,
-          flexShrink: -1, //or flex:-1,
-          //flexBasis: 100, //width or height
-          //flexGrow: 1, //or flex: 1,
-          //alignSelf: "flex-start",
-          // flex: 2,
-        }}
-      />
-      <View
-        style={{
-          backgroundColor: "gold",
-          width: 100,
-          height: 100,
-          // flex: 1,
-        }}
-      />
-      <View
-        style={{
-          backgroundColor: "tomato",
-          width: 100,
-          height: 100,
-          // flex: 1,
-        }}
-      />
-    </View>
-  );
+  return <WelcomeScreen />;
 }
